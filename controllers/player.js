@@ -13,4 +13,14 @@ router.get('/', (req, res) => {
         })
 })
 
+router.delete('/:id', (req, res) => {
+    db.player.findByIdAndDelete(req.params.id)
+    .then(() => {
+        res.redirect('/player')
+    })
+    .catch(err => {console.log('err', err)
+    res.render('error404')
+    })
+})
+
 module.exports = router
