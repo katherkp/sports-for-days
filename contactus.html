@@ -1,22 +1,37 @@
 <link rel="stylesheet" href="styles/index.processed.css">
 </head>
+
 <body>
   <h1>Sports For Days</h1>
   <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#News">News</a>
-  <a href="/Basketball.html">BasketBall</a>
-  <a href="/contactus.html">Contact Us</a>
-</div>
+    <a class="active" href="#home">Home</a>
+    <a href="#News">News</a>
+    <a href="/Basketball.html">BasketBall</a>
+    <a href="/contactus.html">Contact Us</a>
+  </div>
 
   <div class="contact">
-    <label for="firstname">Your First Name</label>
-    <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
-    <span class="required-field">*</span>
-   
-    <label for="lastname">Your Last Name</label>
-    <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
-    <span class="required-field">*</span>
+    <div class="firstName">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstName" name="firstname" placeholder="First Name" minlength="2" maxlength="35">
+      <span class="required-field">*</span>
+    </div>
 
-    <label for="phone">Phone number</label>
-    <input type="text" id="phoneNumber" name="">
+    <div class="lastName">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastName" name="lastname" placeholder="Last Name" minlength="2" maxlength="35">
+      <span class="required-field">*</span>
+    </div>
+
+    <div class="phoneNumber">
+      <label for="phone">Phone number</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" minlength="7" maxlength="11">
+      <span class="required-field">*</span>
+    </div>
+
+    <div class="emailAddress">
+      <label for="phone">Email address</label>
+      <input type="text" id="emailAddress" name="emailAddress" minlength="2" maxlength="40">
+      <span class="required-field">*</span>
+    </div>
+  </div>
