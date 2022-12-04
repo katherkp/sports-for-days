@@ -11,27 +11,33 @@
   </div>
 
   <div class="contact">
+    <p class="fillOutForm">Please fill out all required fields</p>
     <div class="firstName">
-      <label for="firstname">First Name</label>
+      <label for="firstname"></label>
       <input type="text" id="firstName" name="firstname" placeholder="First Name" minlength="2" maxlength="35">
       <span class="required-field">*</span>
     </div>
 
     <div class="lastName">
-      <label for="lastname">Last Name</label>
+      <label for="lastname"></label>
       <input type="text" id="lastName" name="lastname" placeholder="Last Name" minlength="2" maxlength="35">
       <span class="required-field">*</span>
     </div>
-
-    <div class="phoneNumber">
-      <label for="phone">Phone number</label>
-      <input type="text" id="phoneNumber" name="phoneNumber" minlength="7" maxlength="11">
-      <span class="required-field">*</span>
-    </div>
-
+    
     <div class="emailAddress">
-      <label for="phone">Email address</label>
-      <input type="text" id="emailAddress" name="emailAddress" minlength="2" maxlength="40">
+      <label for="phone"></label>
+      <input type="text" id="emailAddress" name="emailAddress" placeholder="Email Address" minlength="2" maxlength="40">
       <span class="required-field">*</span>
     </div>
+    
+    <div class="phoneNumber">
+      <label for="phone"></label>
+      <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number (Optional)" minlength="7" maxlength="11">
+    </div>
+
+
+
+    <button class="cUButton">Submit</button>
+
+
   </div>
